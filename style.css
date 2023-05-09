@@ -1,0 +1,74 @@
+body{
+    background-color: #EEEEEE;
+    text-align: center;
+    position: relative;
+
+}
+div{
+    padding: 10px;
+}
+.view-box{
+    background-color: white;
+    width: 700px;
+    height: 450px;
+    border-radius: 3%;
+    position: relative;
+    margin-top: 140px;
+    left: 600px;
+    padding: 10px;
+    max-height: 900px;
+}
+.task-input{
+    position: relative;
+    top: -10px;
+    left: -40px;
+}
+h1{
+    text-align: center;
+    color: purple;
+    font-size: 40px;
+
+}
+h2{
+    font-size: 25px;
+}
+input {
+    width: 400px;
+    left: 90px;
+    padding: 10px;
+    border: 40;
+    
+}
+button, input{
+    border-width: 3px;
+    border-radius: 90px;
+    border-color: purple;
+    position: relative;
+}
+.button-add-task{
+    padding: 10px;
+    width: 100px;
+}
+.list{
+    position:relative;
+    width: 650px;
+    top: -15px;
+}
+ul{
+    text-align: justify;
+    margin-left: -300px;
+    position: relative;
+    top: -18px;
+    margin-bottom: 20px;
+}
+li{
+    display: inline;
+    color: black;
+    
+}
+.checkbox-li{
+    margin-right: -90px;
+}
+.task-li{
+    line-height: 20px;
+}
