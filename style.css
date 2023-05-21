@@ -1,74 +1,91 @@
 body{
-    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    background-color: #e0e1dd;
+}
+.main-container{
+    display: flex;
+    background-color: #778da9;
+    width: 600px;
+    height: 350px;
+    flex-shrink: 1;
+    border-radius: 10px;
+    border: 3px solid #1b263b;
+    justify-content: center;
+    flex-direction: row;
     text-align: center;
-    position: relative;
-
+    margin-top: 150px;
 }
-div{
-    padding: 10px;
+.inner-container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px
 }
-.view-box{
-    background-color: white;
-    width: 700px;
-    height: 450px;
-    border-radius: 3%;
-    position: relative;
-    margin-top: 140px;
-    left: 600px;
-    padding: 10px;
-    max-height: 900px;
+.title{
+    margin: 15px;
+    font-size: 2.5rem;
 }
-.task-input{
-    position: relative;
-    top: -10px;
-    left: -40px;
+.input-submit-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
 }
-h1{
-    text-align: center;
-    color: purple;
-    font-size: 40px;
-
+.input-box{
+    width: 16rem;
 }
-h2{
-    font-size: 25px;
-}
-input {
-    width: 400px;
-    left: 90px;
-    padding: 10px;
-    border: 40;
+.task-list-container{
+   width: 375px;
+   justify-content: flex-start;
     
-}
-button, input{
-    border-width: 3px;
-    border-radius: 90px;
-    border-color: purple;
-    position: relative;
-}
-.button-add-task{
-    padding: 10px;
-    width: 100px;
 }
 .list{
-    position:relative;
-    width: 650px;
-    top: -15px;
+    text-align: start;
+    align-items: flex-start;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: large;
+    list-style: none;
 }
-ul{
-    text-align: justify;
-    margin-left: -300px;
-    position: relative;
-    top: -18px;
-    margin-bottom: 20px;
+.strikethrough:checked + span{
+    text-decoration:line-through
 }
-li{
-    display: inline;
-    color: black;
-    
+span{
+    text-transform: capitalize;
 }
-.checkbox-li{
-    margin-right: -90px;
+.uList{
+    text-align: start;
 }
-.task-li{
-    line-height: 20px;
+.user-input-container{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+@media (max-width: 680px){
+    .main-container{
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 550px;
+    }
+    .input-submit-container{
+        flex-direction: column;
+    }
+    .submit-button{
+        margin-top: 1px;
+    }
+    .task-list-container{
+        width: 200px;
+    }
+    .title{
+        font-size: xx-large;
+    }
+    .list{
+        font-size: large;
+        font-weight: 600;
+
+    }
+    .task-list-container{
+        width: 19rem;
+    }
 }
