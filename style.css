@@ -54,7 +54,7 @@ body{
 span{
     text-transform: capitalize;
 }
-.uList{
+#uList{
     text-align: start;
 }
 .user-input-container{
